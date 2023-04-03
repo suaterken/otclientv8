@@ -3,35 +3,35 @@
   "combobot": {
     "attackSpellEnabled": false,
     "attackLeaderTargetEnabled": false,
-    "onShootEnabled": false,
-    "item": 3155,
-    "serverLeaderTarget": false,
-    "onCastEnabled": false,
-    "serverEnabled": false,
-    "attack": "",
-    "onSayEnabled": false,
-    "sayLeader": "",
-    "spell": "",
     "shootLeader": "",
-    "attackItemToggle": false,
+    "onCastEnabled": false,
     "followLeaderEnabled": false,
     "commandsEnabled": true,
-    "sayPhrase": "",
-    "serverTriggers": true,
-    "serverLeader": "",
+    "serverEnabled": false,
+    "onSayEnabled": false,
+    "attack": "",
     "enabled": false,
+    "spell": "",
+    "onShootEnabled": false,
+    "attackItemToggle": false,
+    "serverTriggers": true,
+    "item": 3155,
+    "sayPhrase": "",
+    "serverLeaderTarget": false,
+    "serverLeader": "",
+    "sayLeader": "",
     "follow": "",
     "castLeader": ""
   },
   "extras": {
     "rope": 9596,
     "pathfinding": true,
-    "bless": true,
+    "timers": true,
     "machete": 9596,
     "separatePm": true,
-    "highlightTarget": true,
+    "reUse": false,
     "gotoMaxDistance": 30,
-    "killUnder": 1,
+    "reachable": false,
     "holdMwall": true,
     "checkPlayer": true,
     "looting": 40,
@@ -40,24 +40,57 @@
     "joinBot": false,
     "lootLast": false,
     "holdMwHot": "F5",
-    "holdWgHot": "F6",
+    "nextBackpack": true,
     "shovel": 9596,
     "lootDelay": 200,
-    "title": true,
-    "autoOpenDoors": true,
-    "stake": false,
-    "scythe": 9596,
-    "oberon": true,
-    "huntRoutes": 50,
-    "antiKick": true,
     "talkDelay": 1000,
-    "nextBackpack": true,
-    "reachable": false,
-    "reUse": false,
+    "autoOpenDoors": true,
+    "holdWgHot": "F6",
+    "scythe": 9596,
+    "huntRoutes": 50,
+    "oberon": true,
+    "antiKick": true,
+    "title": true,
+    "stake": false,
+    "killUnder": 1,
+    "highlightTarget": true,
     "height": 360,
-    "timers": true
+    "bless": true
   },
-  "bestHeal": 641,
+  "foodItems": [
+    {
+      "id": 3725,
+      "count": 1
+    },
+    {
+      "id": 3732,
+      "count": 0
+    },
+    {
+      "id": 3583,
+      "count": 2
+    },
+    {
+      "id": 3585,
+      "count": 1
+    },
+    {
+      "id": 3592,
+      "count": 1
+    },
+    {
+      "id": 3600,
+      "count": 1
+    },
+    {
+      "id": 3601,
+      "count": 1
+    },
+    {
+      "count": 1,
+      "id": 3607
+    }
+  ],
   "specialDeposit": {
     "height": 380,
     "items": [
@@ -68,16 +101,16 @@
     "enabled": true,
     "trashItems": [
       {
-        "count": 1,
-        "id": 283
+        "id": 283,
+        "count": 1
       },
       {
-        "count": 1,
-        "id": 284
+        "id": 284,
+        "count": 1
       },
       {
-        "count": 1,
-        "id": 285
+        "id": 285,
+        "count": 1
       }
     ],
     "useItems": [
@@ -85,12 +118,12 @@
     ],
     "capItems": [
       {
-        "id": 21175,
-        "count": 1
+        "count": 1,
+        "id": 21175
       },
       {
-        "id": 3351,
-        "count": 1
+        "count": 1,
+        "id": 3351
       }
     ]
   },
@@ -111,511 +144,353 @@
     "trackedBoss": [
 
     ],
-    "rarityFrames": true,
     "outfits": {
       "Sandcrawler": {
         "addons": 0,
         "feet": 0,
+        "mount": 0,
+        "auxType": 0,
         "type": 350,
         "body": 0,
         "legs": 0,
-        "auxType": 0,
-        "mount": 0,
         "head": 0
       },
       "Hyaena": {
         "addons": 0,
         "feet": 0,
+        "mount": 0,
+        "auxType": 0,
         "type": 94,
         "body": 0,
         "legs": 0,
-        "auxType": 0,
-        "mount": 0,
         "head": 0
       },
       "Cave Rat": {
         "addons": 0,
         "feet": 0,
+        "legs": 0,
+        "body": 0,
         "mount": 0,
         "auxType": 0,
         "type": 56,
-        "body": 0,
-        "legs": 0,
         "head": 0
       },
       "Stampor": {
         "addons": 0,
         "feet": 0,
+        "legs": 0,
+        "auxType": 0,
         "mount": 0,
         "body": 0,
         "type": 381,
-        "auxType": 0,
-        "legs": 0,
         "head": 0
       },
       "Killer Caiman": {
         "addons": 0,
         "feet": 0,
+        "legs": 0,
+        "auxType": 0,
         "mount": 0,
         "body": 0,
         "type": 358,
-        "auxType": 0,
+        "head": 0
+      },
+      "Gnarlhound": {
+        "mount": 0,
+        "feet": 0,
         "legs": 0,
+        "body": 0,
+        "type": 341,
+        "auxType": 0,
+        "addons": 0,
+        "head": 0
+      },
+      "Golden Servant": {
+        "mount": 0,
+        "feet": 0,
+        "legs": 0,
+        "body": 0,
+        "type": 396,
+        "auxType": 0,
+        "addons": 0,
+        "head": 0
+      },
+      "Yielothax": {
+        "mount": 0,
+        "feet": 0,
+        "legs": 0,
+        "body": 0,
+        "type": 408,
+        "auxType": 0,
+        "addons": 0,
+        "head": 0
+      },
+      "Death Blob": {
+        "mount": 0,
+        "feet": 0,
+        "legs": 0,
+        "body": 0,
+        "type": 315,
+        "auxType": 0,
+        "addons": 0,
         "head": 0
       },
       "Dog": {
         "addons": 0,
         "feet": 0,
+        "mount": 0,
+        "auxType": 0,
         "type": 32,
         "body": 0,
         "legs": 0,
-        "auxType": 0,
-        "mount": 0,
         "head": 0
       },
       "Ghoul": {
         "addons": 0,
         "feet": 0,
+        "mount": 0,
+        "auxType": 0,
         "type": 18,
         "body": 0,
         "legs": 0,
-        "auxType": 0,
-        "mount": 0,
         "head": 0
       },
       "Lizard Legionnaire": {
         "addons": 0,
         "feet": 0,
+        "legs": 0,
+        "auxType": 0,
         "mount": 0,
         "body": 0,
         "type": 338,
-        "auxType": 0,
-        "legs": 0,
         "head": 0
       },
       "Training Monk": {
         "addons": 0,
         "feet": 0,
+        "type": 1078,
+        "body": 0,
         "legs": 0,
         "auxType": 0,
         "mount": 0,
-        "body": 0,
-        "type": 1078,
         "head": 0
       },
       "Vampire": {
         "addons": 0,
         "feet": 0,
+        "mount": 0,
+        "auxType": 0,
         "type": 68,
         "body": 0,
         "legs": 0,
-        "auxType": 0,
-        "mount": 0,
-        "head": 0
-      },
-      "Minotaur Guard": {
-        "addons": 0,
-        "feet": 0,
-        "type": 29,
-        "body": 0,
-        "legs": 0,
-        "auxType": 0,
-        "mount": 0,
-        "head": 0
-      },
-      "Mummy": {
-        "addons": 0,
-        "feet": 0,
-        "type": 65,
-        "body": 0,
-        "legs": 0,
-        "auxType": 0,
-        "mount": 0,
         "head": 0
       },
       "Fox": {
         "addons": 0,
         "feet": 0,
+        "legs": 0,
+        "auxType": 0,
         "mount": 0,
         "body": 0,
         "type": 1029,
+        "head": 0
+      },
+      "Dragon": {
+        "addons": 0,
+        "feet": 0,
+        "mount": 0,
         "auxType": 0,
+        "type": 34,
+        "body": 0,
         "legs": 0,
+        "head": 0
+      },
+      "Lizard High Guard": {
+        "addons": 0,
+        "feet": 0,
+        "legs": 0,
+        "auxType": 0,
+        "mount": 0,
+        "body": 0,
+        "type": 337,
         "head": 0
       },
       "Demon Skeleton": {
         "addons": 0,
         "feet": 0,
+        "mount": 0,
+        "auxType": 0,
         "type": 37,
         "body": 0,
         "legs": 0,
-        "auxType": 0,
-        "mount": 0,
         "head": 0
       },
       "Lizard Zaogun": {
         "addons": 0,
         "feet": 0,
+        "legs": 0,
+        "auxType": 0,
         "mount": 0,
         "body": 0,
         "type": 343,
-        "auxType": 0,
-        "legs": 0,
         "head": 0
       },
       "Minotaur": {
         "addons": 0,
         "feet": 0,
+        "mount": 0,
+        "auxType": 0,
         "type": 25,
         "body": 0,
-        "legs": 0,
-        "auxType": 0,
-        "mount": 0,
-        "head": 0
-      },
-      "Minotaur Archer": {
-        "addons": 0,
-        "feet": 0,
-        "type": 24,
-        "body": 0,
-        "legs": 0,
-        "auxType": 0,
-        "mount": 0,
-        "head": 0
-      },
-      "Dromedary": {
-        "addons": 0,
-        "feet": 0,
-        "type": 404,
-        "body": 0,
-        "legs": 0,
-        "auxType": 0,
-        "mount": 0,
-        "head": 0
-      },
-      "Poison Spider": {
-        "addons": 0,
-        "feet": 0,
-        "type": 36,
-        "body": 0,
-        "legs": 0,
-        "auxType": 0,
-        "mount": 0,
-        "head": 0
-      },
-      "Minotaur Mage": {
-        "addons": 0,
-        "feet": 0,
-        "type": 23,
-        "body": 0,
-        "legs": 0,
-        "auxType": 0,
-        "mount": 0,
-        "head": 0
-      },
-      "Lion": {
-        "addons": 0,
-        "feet": 0,
-        "type": 41,
-        "auxType": 0,
-        "legs": 0,
-        "body": 0,
-        "mount": 0,
-        "head": 0
-      },
-      "Dragon Hatchling": {
-        "addons": 0,
-        "feet": 0,
-        "mount": 0,
-        "body": 0,
-        "type": 271,
-        "auxType": 0,
         "legs": 0,
         "head": 0
       },
       "Dragon Lord": {
         "addons": 0,
         "feet": 0,
+        "mount": 0,
+        "auxType": 0,
         "type": 39,
         "body": 0,
         "legs": 0,
-        "auxType": 0,
-        "mount": 0,
         "head": 0
       },
-      "Lizard High Guard": {
+      "Dragon Hatchling": {
+        "addons": 0,
+        "feet": 0,
+        "legs": 0,
+        "auxType": 0,
+        "mount": 0,
+        "body": 0,
+        "type": 271,
+        "head": 0
+      },
+      "Poison Spider": {
+        "addons": 0,
+        "feet": 0,
+        "mount": 0,
+        "auxType": 0,
+        "type": 36,
+        "body": 0,
+        "legs": 0,
+        "head": 0
+      },
+      "Lion": {
         "addons": 0,
         "feet": 0,
         "mount": 0,
         "body": 0,
-        "type": 337,
+        "type": 41,
         "auxType": 0,
         "legs": 0,
         "head": 0
       },
-      "Dragon": {
+      "Minotaur Mage": {
         "addons": 0,
         "feet": 0,
-        "type": 34,
+        "mount": 0,
+        "auxType": 0,
+        "type": 23,
         "body": 0,
         "legs": 0,
-        "auxType": 0,
+        "head": 0
+      },
+      "Dromedary": {
+        "addons": 0,
+        "feet": 0,
         "mount": 0,
+        "auxType": 0,
+        "type": 404,
+        "body": 0,
+        "legs": 0,
+        "head": 0
+      },
+      "Minotaur Archer": {
+        "addons": 0,
+        "feet": 0,
+        "mount": 0,
+        "auxType": 0,
+        "type": 24,
+        "body": 0,
+        "legs": 0,
+        "head": 0
+      },
+      "Minotaur Guard": {
+        "addons": 0,
+        "feet": 0,
+        "mount": 0,
+        "auxType": 0,
+        "type": 29,
+        "body": 0,
+        "legs": 0,
+        "head": 0
+      },
+      "Mummy": {
+        "addons": 0,
+        "feet": 0,
+        "mount": 0,
+        "auxType": 0,
+        "type": 65,
+        "body": 0,
+        "legs": 0,
         "head": 0
       }
-    }
+    },
+    "rarityFrames": true
   },
   "cavebotSell": [
     {
-      "count": 1,
-      "id": 23544
+      "id": 23544,
+      "count": 1
     },
     {
-      "count": 1,
-      "id": 3081
+      "id": 3081,
+      "count": 1
     }
   ],
-  "bestHit": 979,
+  "bestHit": 1074,
   "EquipperPanel": {
-    "enabled": false,
     "bosses": [
 
     ],
+    "enabled": false,
     "rules": [
 
     ]
   },
   "_configs": {
-    "targetbot_configs": {
-      "selected": "config_name",
-      "enabled": false
-    },
     "cavebot_configs": {
-      "selected": "darashia_dragon_top",
-      "enabled": false
+      "enabled": true,
+      "selected": "muggy_yielothax"
+    },
+    "targetbot_configs": {
+      "enabled": true,
+      "selected": "config_name"
     }
   },
   "checkVersion": 1680536131,
-  "caveBotTasker": {
-    "max": 0,
-    "monster": "",
-    "inProgress": false,
-    "count": 2,
-    "taskName": ""
-  },
-  "foodItems": [
+  "autoEquip": [
     {
-      "count": 1,
-      "id": 3725
+      "item1": 3052,
+      "title": "Auto Equip",
+      "item2": 3089,
+      "on": false,
+      "slot": 9
     },
     {
-      "count": 0,
-      "id": 3732
-    },
-    {
-      "count": 2,
-      "id": 3583
-    },
-    {
-      "count": 1,
-      "id": 3585
-    },
-    {
-      "count": 1,
-      "id": 3592
-    },
-    {
-      "count": 1,
-      "id": 3600
-    },
-    {
-      "count": 1,
-      "id": 3601
-    },
-    {
-      "id": 3607,
-      "count": 1
+      "item1": 0,
+      "title": "Auto Equip",
+      "item2": 0,
+      "on": false,
+      "slot": 0
     }
   ],
-  "autoTradeMessage": "I'm using OTClientV8!",
-  "BOTserver": {
-    "manaInfo": true,
-    "mwallInfo": true,
-    "mwalls": [
-
-    ],
-    "outfit": true,
-    "broadcasts": true,
+  "pushmax": {
+    "pushMaxRuneId": 3188,
+    "mwallBlockId": 2128,
+    "pushDelay": 1060,
     "enabled": false,
-    "vocation": true
-  },
-  "_macros": {
-    "": false,
-    "Eat Food": true,
-    "Hold Target": true,
-    "Exchange money": true,
-    "AntiRS & Msg": false,
-    "Quiver Manager": false,
-    "Depot Withdraw": false
-  },
-  "moneyItems": [
-    {
-      "count": 1,
-      "id": 3031
-    },
-    {
-      "count": 1,
-      "id": 3035
-    }
-  ],
-  "alarms": {
-    "privateMsg": [
-
-    ],
-    "customMessage": {
-      "value": ""
-    },
-    "flashClient": [
-
-    ],
-    "lowMana": {
-      "value": 20
-    },
-    "creatureDetected": [
-
-    ],
-    "damageTaken": [
-
-    ],
-    "playerAttack": [
-
-    ],
-    "ignoreFriends": [
-
-    ],
-    "defaultMsg": [
-
-    ],
-    "creatureName": {
-      "value": ""
-    },
-    "lowHealth": {
-      "value": 20
-    },
-    "playerDetected": [
-
-    ]
-  },
-  "playerList": {
-    "enemyList": [
-
-    ],
-    "outfits": false,
-    "groupMembers": true,
-    "marks": false,
-    "highlight": false,
-    "blackList": [
-
-    ],
-    "friendList": [
-
-    ]
-  },
-  "newHealer": {
-    "settings": [
-      {
-        "type": "HealItem",
-        "value": 268,
-        "text": "Mana Item "
-      },
-      {
-        "type": "HealScroll",
-        "value": 6,
-        "text": "Item Range: "
-      },
-      {
-        "type": "HealItem",
-        "value": 3160,
-        "text": "Health Item "
-      },
-      {
-        "type": "HealScroll",
-        "value": 2,
-        "text": "Mas Res Players: "
-      },
-      {
-        "type": "HealScroll",
-        "value": 80,
-        "text": "Heal Friend at: "
-      },
-      {
-        "type": "HealScroll",
-        "value": 80,
-        "text": "Use Gran Sio at: "
-      },
-      {
-        "type": "HealScroll",
-        "value": 80,
-        "text": "Min Player HP%: "
-      },
-      {
-        "type": "HealScroll",
-        "value": 50,
-        "text": "Min Player MP%: "
-      }
-    ],
-    "conditions": {
-      "sorcerers": false,
-      "knights": true,
-      "friends": false,
-      "botserver": false,
-      "paladins": true,
-      "party": true,
-      "druids": false,
-      "guild": false
-    },
-    "customPlayers": [
-
-    ],
-    "priorities": [
-      {
-        "custom": true,
-        "enabled": false,
-        "name": "Custom Spell"
-      },
-      {
-        "strong": true,
-        "enabled": true,
-        "name": "Exura Gran Sio"
-      },
-      {
-        "normal": true,
-        "enabled": true,
-        "name": "Exura Sio"
-      },
-      {
-        "enabled": true,
-        "name": "Exura Gran Mas Res",
-        "area": true
-      },
-      {
-        "health": true,
-        "enabled": true,
-        "name": "Health Item"
-      },
-      {
-        "enabled": true,
-        "name": "Mana Item",
-        "mana": true
-      }
-    ],
-    "enabled": false,
-    "groups": [
-
-    ],
-    "vocations": [
-
-    ]
+    "pushMaxKey": "PageUp"
   },
   "renameContainers": {
     "purse": true,
@@ -664,27 +539,192 @@
       }
     ]
   },
-  "pushmax": {
-    "pushMaxRuneId": 3188,
-    "mwallBlockId": 2128,
-    "pushDelay": 1060,
-    "enabled": false,
-    "pushMaxKey": "PageUp"
+  "BOTserver": {
+    "manaInfo": true,
+    "mwallInfo": true,
+    "mwalls": [
+
+    ],
+    "outfit": true,
+    "broadcasts": true,
+    "vocation": true,
+    "enabled": false
   },
-  "autoEquip": [
+  "_macros": {
+    "": false,
+    "Depot Withdraw": false,
+    "Hold Target": true,
+    "Exchange money": true,
+    "Eat Food": true,
+    "Quiver Manager": true,
+    "AntiRS & Msg": false
+  },
+  "alarms": {
+    "privateMsg": [
+
+    ],
+    "customMessage": {
+      "value": ""
+    },
+    "flashClient": [
+
+    ],
+    "lowMana": {
+      "value": 20
+    },
+    "creatureDetected": [
+
+    ],
+    "damageTaken": [
+
+    ],
+    "playerAttack": [
+
+    ],
+    "ignoreFriends": [
+
+    ],
+    "defaultMsg": [
+
+    ],
+    "playerDetected": [
+
+    ],
+    "lowHealth": {
+      "value": 20
+    },
+    "creatureName": {
+      "value": ""
+    }
+  },
+  "moneyItems": [
     {
-      "item1": 3052,
-      "title": "Auto Equip",
-      "item2": 3089,
-      "on": false,
-      "slot": 9
+      "id": 3031,
+      "count": 1
     },
     {
-      "item1": 0,
-      "title": "Auto Equip",
-      "item2": 0,
-      "on": false,
-      "slot": 0
+      "id": 3035,
+      "count": 1
     }
-  ]
+  ],
+  "playerList": {
+    "enemyList": [
+
+    ],
+    "outfits": false,
+    "groupMembers": true,
+    "friendList": [
+
+    ],
+    "highlight": false,
+    "marks": false,
+    "blackList": [
+
+    ]
+  },
+  "newHealer": {
+    "vocations": [
+
+    ],
+    "groups": [
+
+    ],
+    "enabled": false,
+    "conditions": {
+      "party": true,
+      "knights": true,
+      "friends": false,
+      "botserver": false,
+      "paladins": true,
+      "druids": false,
+      "sorcerers": false,
+      "guild": false
+    },
+    "customPlayers": [
+
+    ],
+    "priorities": [
+      {
+        "custom": true,
+        "enabled": false,
+        "name": "Custom Spell"
+      },
+      {
+        "strong": true,
+        "enabled": true,
+        "name": "Exura Gran Sio"
+      },
+      {
+        "normal": true,
+        "enabled": true,
+        "name": "Exura Sio"
+      },
+      {
+        "enabled": true,
+        "name": "Exura Gran Mas Res",
+        "area": true
+      },
+      {
+        "health": true,
+        "enabled": true,
+        "name": "Health Item"
+      },
+      {
+        "enabled": true,
+        "name": "Mana Item",
+        "mana": true
+      }
+    ],
+    "settings": [
+      {
+        "type": "HealItem",
+        "text": "Mana Item ",
+        "value": 268
+      },
+      {
+        "type": "HealScroll",
+        "text": "Item Range: ",
+        "value": 6
+      },
+      {
+        "type": "HealItem",
+        "text": "Health Item ",
+        "value": 3160
+      },
+      {
+        "type": "HealScroll",
+        "text": "Mas Res Players: ",
+        "value": 2
+      },
+      {
+        "type": "HealScroll",
+        "text": "Heal Friend at: ",
+        "value": 80
+      },
+      {
+        "type": "HealScroll",
+        "text": "Use Gran Sio at: ",
+        "value": 80
+      },
+      {
+        "type": "HealScroll",
+        "text": "Min Player HP%: ",
+        "value": 80
+      },
+      {
+        "type": "HealScroll",
+        "text": "Min Player MP%: ",
+        "value": 50
+      }
+    ]
+  },
+  "autoTradeMessage": "I'm using OTClientV8!",
+  "caveBotTasker": {
+    "max": 0,
+    "monster": "",
+    "inProgress": false,
+    "count": 2,
+    "taskName": ""
+  },
+  "bestHeal": 641
 }
