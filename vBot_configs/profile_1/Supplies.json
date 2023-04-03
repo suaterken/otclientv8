@@ -1,0 +1,51 @@
+{
+  "supplies": {
+    "paladin": {
+      "capSwitch": false,
+      "items": {
+        "23374": {
+          "max": 200,
+          "min": 60,
+          "avg": 0
+        },
+        "238": {
+          "max": 500,
+          "min": 60,
+          "avg": 64
+        },
+        "35902": {
+          "max": 900,
+          "min": 100,
+          "avg": 120
+        },
+        "237": [
+
+        ]
+      },
+      "capValue": "50",
+      "SoftBoots": false
+    },
+    "currentProfile": "pala low",
+    "pala low": {
+      "capValue": "50",
+      "items": {
+        "238": {
+          "max": 500,
+          "min": 50,
+          "avg": 10
+        },
+        "23374": {
+          "max": 150,
+          "min": 100,
+          "avg": 0
+        },
+        "35902": {
+          "max": 1500,
+          "min": 50,
+          "avg": 100
+        }
+      },
+      "capSwitch": false
+    }
+  }
+}

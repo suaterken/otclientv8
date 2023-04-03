@@ -1,0 +1,259 @@
+{
+  "ConditionPanel": {
+    "cureBurn": false,
+    "curseCost": 80,
+    "electrifyCost": 22,
+    "ignoreInPz": true,
+    "bleedCost": 45,
+    "cureCurse": false,
+    "holdHaste": true,
+    "curePosion": false,
+    "hasteSpell": "utani hur",
+    "cureParalyse": false,
+    "stopHaste": false,
+    "cureBleed": false,
+    "holdUtura": false,
+    "paralyseSpell": "utani hur",
+    "utanaCost": 440,
+    "uturaType": "Utura Gran",
+    "poisonCost": 20,
+    "utamoCost": 40,
+    "enabled": true,
+    "uturaCost": 400,
+    "cureElectrify": false,
+    "holdUtamo": false,
+    "paralyseCost": 40,
+    "hasteCost": 40,
+    "holdUtana": false,
+    "burnCost": 30
+  },
+  "currentHealBotProfile": 1,
+  "healbot": [
+    {
+      "MessageDelay": false,
+      "Conditions": true,
+      "itemTable": [
+        {
+          "sign": "<",
+          "value": 50,
+          "index": 2,
+          "item": 23374,
+          "origin": "HP%",
+          "enabled": true
+        },
+        {
+          "enabled": true,
+          "origin": "MP%",
+          "value": 50,
+          "item": 238,
+          "index": 1,
+          "sign": "<"
+        },
+        {
+          "sign": "<",
+          "value": 20,
+          "index": 3,
+          "item": 23374,
+          "origin": "MP%",
+          "enabled": true
+        }
+      ],
+      "Delay": true,
+      "Visible": true,
+      "Cooldown": false,
+      "spellTable": [
+        {
+          "enabled": true,
+          "value": 70,
+          "origin": "HP%",
+          "sign": "<",
+          "spell": "exura gran san",
+          "index": 1,
+          "cost": 200
+        },
+        {
+          "enabled": true,
+          "value": 90,
+          "origin": "HP%",
+          "sign": "<",
+          "spell": "exura san",
+          "index": 2,
+          "cost": 160
+        },
+        {
+          "enabled": true,
+          "value": 99,
+          "origin": "MP%",
+          "sign": ">",
+          "spell": "exura gran san",
+          "index": 3,
+          "cost": 210
+        },
+        {
+          "enabled": false,
+          "value": 90,
+          "origin": "MP%",
+          "sign": ">",
+          "spell": "exura gran",
+          "index": 4,
+          "cost": 70
+        }
+      ],
+      "enabled": true,
+      "name": "paladin",
+      "Interval": false
+    },
+    {
+      "MessageDelay": false,
+      "Conditions": true,
+      "itemTable": [
+        {
+          "enabled": true,
+          "origin": "MP%",
+          "value": 50,
+          "item": 237,
+          "index": 1,
+          "sign": "<"
+        },
+        {
+          "enabled": true,
+          "origin": "HP%",
+          "value": 50,
+          "item": 266,
+          "index": 3,
+          "sign": "<"
+        },
+        {
+          "enabled": false,
+          "origin": "MP%",
+          "value": 80,
+          "item": 268,
+          "index": 2,
+          "sign": "<"
+        }
+      ],
+      "Delay": true,
+      "Visible": true,
+      "Cooldown": true,
+      "spellTable": [
+        {
+          "enabled": false,
+          "value": 80,
+          "origin": "HP%",
+          "sign": "<",
+          "spell": "exura gran",
+          "index": 1,
+          "cost": 70
+        },
+        {
+          "enabled": false,
+          "value": 80,
+          "origin": "HP%",
+          "sign": "<",
+          "spell": "exura san",
+          "index": 2,
+          "cost": 160
+        },
+        {
+          "enabled": true,
+          "value": 90,
+          "origin": "HP%",
+          "sign": "<",
+          "spell": "exura san",
+          "index": 3,
+          "cost": 160
+        }
+      ],
+      "enabled": true,
+      "name": "paladin low level",
+      "Interval": true
+    },
+    {
+      "MessageDelay": false,
+      "Conditions": true,
+      "itemTable": [
+        {
+          "sign": "<",
+          "index": 1,
+          "origin": "HP%",
+          "item": 236,
+          "value": 50,
+          "enabled": true
+        },
+        {
+          "sign": "<",
+          "index": 2,
+          "origin": "MP%",
+          "item": 268,
+          "value": 50,
+          "enabled": true
+        },
+        {
+          "sign": "<",
+          "index": 3,
+          "origin": "HP%",
+          "item": 266,
+          "value": 50,
+          "enabled": true
+        },
+        {
+          "enabled": true,
+          "index": 4,
+          "origin": "HP%",
+          "item": 266,
+          "value": 75,
+          "sign": "<"
+        }
+      ],
+      "Delay": true,
+      "Visible": true,
+      "Cooldown": true,
+      "spellTable": [
+        {
+          "enabled": true,
+          "index": 1,
+          "origin": "HP%",
+          "spell": "exura ico",
+          "sign": "<",
+          "value": 90,
+          "cost": 40
+        }
+      ],
+      "enabled": true,
+      "name": "Profile #3",
+      "Interval": true
+    },
+    {
+      "MessageDelay": false,
+      "Conditions": true,
+      "itemTable": [
+
+      ],
+      "Delay": true,
+      "Visible": true,
+      "Cooldown": true,
+      "spellTable": [
+
+      ],
+      "enabled": false,
+      "name": "Profile #4",
+      "Interval": true
+    },
+    {
+      "MessageDelay": false,
+      "Conditions": true,
+      "itemTable": [
+
+      ],
+      "Delay": true,
+      "Visible": true,
+      "Cooldown": true,
+      "spellTable": [
+
+      ],
+      "enabled": false,
+      "name": "Profile #5",
+      "Interval": true
+    }
+  ]
+}
