@@ -40,12 +40,12 @@ CaveBot.Extensions.Depositor.setup = function()
 		end
 
 		-- loot list check
-		lootTable = lootTable or CaveBot.GetLootItems()
-		if #lootTable == 0 then
-			print("CaveBot[Depositor]: no items in loot list. Wrong TargetBot Config? Proceeding")
-			resetCache()
-			return true
-		end
+		-- lootTable = lootTable or CaveBot.GetLootItems()
+		-- if #lootTable == 0 then
+		-- 	print("CaveBot[Depositor]: no items in loot list. Wrong TargetBot Config? Proceeding")
+		-- 	resetCache()
+		-- 	return true
+		-- end
 
 		delay(70)
 
@@ -58,37 +58,37 @@ CaveBot.Extensions.Depositor.setup = function()
 				return "retry"
 			end
 			-- open next backpacks if no more loot
-			if not CaveBot.HasLootItems() then
-				local lootContainers = CaveBot.GetLootContainers()
-				for _, container in ipairs(getContainers()) do
-					local cId = container:getContainerItem():getId()
-					if table.find(lootContainers, cId) then
-						for i, item in ipairs(container:getItems()) do
-							if item:getId() == cId then
-								g_game.open(item, container)
-								delay(100)
-								return "retry"
-							end
+			-- if not CaveBot.HasLootItems() then
+			local lootContainers = CaveBot.GetLootContainers()
+			for _, container in ipairs(getContainers()) do
+				local cId = container:getContainerItem():getId()
+				if table.find(lootContainers, cId) then
+					for i, item in ipairs(container:getItems()) do
+						if item:getId() == cId then
+							g_game.open(item, container)
+							delay(100)
+							return "retry"
 						end
 					end
 				end
-				-- couldn't find next container, so we done
-				print("CaveBot[Depositor]: all items stashed, no backpack to open next, proceeding")
-				CaveBot.CloseAllLootContainers()
-				delay(3000)
-				resetCache()
-				return true
 			end
+			-- couldn't find next container, so we done
+			print("CaveBot[Depositor]: all items stashed, no backpack to open next, proceeding")
+			CaveBot.CloseAllLootContainers()
+			delay(3000)
+			resetCache()
+			return true
+			-- end
 		end
 
 		-- first check items
-		if retries == 0 then
-			if not CaveBot.HasLootItems() then -- resource consuming function
-				print("CaveBot[Depositor]: no items to stash, proceeding")
-				resetCache()
-				return true
-			end
-		end
+		-- if retries == 0 then
+		-- 	if not CaveBot.HasLootItems() then -- resource consuming function
+		-- 		print("CaveBot[Depositor]: no items to stash, proceeding")
+		-- 		resetCache()
+		-- 		return true
+		-- 	end
+		-- end
 
 		-- next check retries
 		if retries > 400 then 
@@ -109,12 +109,15 @@ CaveBot.Extensions.Depositor.setup = function()
 		destination = destination or getContainerByName("Depot chest")
 		if not destination then return "retry" end
 
+		local lootContainers = CaveBot.GetLootContainers()
 		for _, container in pairs(getContainers()) do
     	    local name = container:getName():lower()
+			local cId = container:getContainerItem():getId()
     	    if not name:find("depot") and not name:find("your inbox") then
     	        for _, item in pairs(container:getItems()) do
     	            local id = item:getId()
-					if table.find(lootTable, id) then
+					-- if table.find(lootTable, id) then
+					if table.find(lootContainers, cId) then
 						local index = getStashingIndex(id) or item:isStackable() and 1 or 0
 						statusMessage("[Depositer] stashing item: " ..id.. " to depot: "..index+1)
 						CaveBot.StashItem(item, index, destination)

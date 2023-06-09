@@ -4,6 +4,11 @@ local isWalking = {}
 local walkPath = {}
 local walkPathIter = 0
 
+local supplyRetries = 0
+local missedChecks = 0
+local rawRound = 0
+local time = now
+
 CaveBot.resetWalking = function()
   expectedDirs = {}
   walkPath = {}
@@ -66,12 +71,28 @@ onPlayerPositionChange(function(newPos, oldPos)
   end
 end)
 
+local SupplyCheck = function ()
+  local supplyData = Supplies.hasEnough()
+  if type(supplyData) == "table" then
+    print("CaveBot[SupplyCheck]: Not enough item: " .. supplyData.id .. "(only " .. supplyData.amount .. " left). Going on refill.")
+    return false
+  else
+    return true
+  end
+end
+
 CaveBot.walkTo = function(dest, maxDist, params)
   local path = getPath(player:getPosition(), dest, maxDist, params)
   if not path or not path[1] then
     return false
   end
   local dir = path[1]
+
+  -- print ("here")
+  if not SupplyCheck() and TargetBot.isOn() then
+    -- print ("there")
+    TargetBot.setOff()
+  end
   
   if CaveBot.Config.get("mapClick") then
     local ret = autoWalk(path)

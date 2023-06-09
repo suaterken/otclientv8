@@ -5,9 +5,9 @@
 
       ],
       "Visible": true,
-      "ignoreMana": true,
-      "name": "Profile #1",
       "BlackListSafe": false,
+      "name": "paladin",
+      "Kills": false,
       "Rotate": false,
       "AntiRsRange": 5,
       "Cooldown": true,
@@ -15,16 +15,16 @@
       "PvpSafe": true,
       "enabled": false,
       "KillsAmount": 1,
-      "Kills": false
+      "ignoreMana": true
     },
     {
       "attackTable": [
 
       ],
       "Visible": true,
-      "ignoreMana": true,
-      "name": "Profile #2",
       "BlackListSafe": false,
+      "name": "knight",
+      "Kills": false,
       "Rotate": false,
       "AntiRsRange": 5,
       "Cooldown": true,
@@ -32,7 +32,7 @@
       "PvpSafe": true,
       "enabled": false,
       "KillsAmount": 1,
-      "Kills": false
+      "ignoreMana": true
     },
     {
       "attackTable": [
@@ -55,13 +55,13 @@
           "pattern": 10
         },
         {
-          "description": "[3 Sqm] 1+ Any Creatures: exori flam, targeted (0%-100%)",
+          "pattern": 3,
           "mana": 1,
-          "orMore": true,
+          "description": "[3 Sqm] 1+ Any Creatures: exori flam, targeted (0%-100%)",
           "monsters": true,
           "category": 1,
           "spell": "exori flam",
-          "pattern": 3,
+          "orMore": true,
           "creatures": "*",
           "tooltip": false,
           "patternCategory": 1,
@@ -73,13 +73,13 @@
           "itemId": 0
         },
         {
-          "description": "[3 Sqm] 1+ Any Creatures: exori frigo, targeted (0%-100%)",
+          "pattern": 3,
           "mana": 1,
-          "orMore": true,
+          "description": "[3 Sqm] 1+ Any Creatures: exori frigo, targeted (0%-100%)",
           "monsters": true,
           "category": 1,
           "spell": "exori frigo",
-          "pattern": 3,
+          "orMore": true,
           "creatures": "*",
           "tooltip": false,
           "patternCategory": 1,
@@ -92,9 +92,9 @@
         }
       ],
       "Visible": true,
-      "ignoreMana": true,
-      "name": "Profile #3",
       "BlackListSafe": false,
+      "name": "mage",
+      "Kills": false,
       "Rotate": false,
       "AntiRsRange": 5,
       "Cooldown": true,
@@ -102,16 +102,16 @@
       "PvpSafe": true,
       "enabled": true,
       "KillsAmount": 1,
-      "Kills": false
+      "ignoreMana": true
     },
     {
       "attackTable": [
 
       ],
       "Visible": true,
-      "ignoreMana": true,
+      "BlackListSafe": false,
       "name": "Profile #4",
-      "BlackListSafe": false,
+      "Kills": false,
       "Rotate": false,
       "AntiRsRange": 5,
       "Cooldown": true,
@@ -119,16 +119,16 @@
       "PvpSafe": true,
       "enabled": false,
       "KillsAmount": 1,
-      "Kills": false
+      "ignoreMana": true
     },
     {
       "attackTable": [
 
       ],
       "Visible": true,
-      "ignoreMana": true,
-      "name": "Profile #5",
       "BlackListSafe": false,
+      "name": "Profile #5",
+      "Kills": false,
       "Rotate": false,
       "AntiRsRange": 5,
       "Cooldown": true,
@@ -136,7 +136,7 @@
       "PvpSafe": true,
       "enabled": false,
       "KillsAmount": 1,
-      "Kills": false
+      "ignoreMana": true
     }
   ],
   "currentBotProfile": 3

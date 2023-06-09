@@ -1,12 +1,12 @@
 {
-  "BotServerChannel": "6669206159451",
+  "BotServerChannel": "4342493634093",
   "combobot": {
     "attackSpellEnabled": false,
     "attackLeaderTargetEnabled": false,
     "onShootEnabled": false,
     "item": 3155,
-    "followLeaderEnabled": false,
-    "serverTriggers": true,
+    "serverLeaderTarget": false,
+    "onCastEnabled": false,
     "serverEnabled": false,
     "attack": "",
     "onSayEnabled": false,
@@ -14,10 +14,10 @@
     "spell": "",
     "shootLeader": "",
     "attackItemToggle": false,
-    "serverLeaderTarget": false,
+    "followLeaderEnabled": false,
     "commandsEnabled": true,
     "sayPhrase": "",
-    "onCastEnabled": false,
+    "serverTriggers": true,
     "serverLeader": "",
     "enabled": false,
     "follow": "",
@@ -26,38 +26,43 @@
   "extras": {
     "rope": 9596,
     "pathfinding": true,
-    "bless": true,
     "machete": 9596,
-    "separatePm": true,
-    "highlightTarget": true,
+    "bless": true,
+    "separatePm": false,
     "gotoMaxDistance": 30,
-    "killUnder": 1,
+    "highlightTarget": true,
     "holdMwall": true,
     "checkPlayer": true,
-    "looting": 50,
+    "looting": 40,
     "suppliesControl": false,
     "useAll": "space",
     "joinBot": false,
-    "lootLast": false,
+    "lootLast": true,
     "holdMwHot": "F5",
-    "stake": false,
-    "shovel": 9596,
-    "reachable": false,
-    "title": true,
-    "autoOpenDoors": true,
     "holdWgHot": "F6",
-    "nextBackpack": true,
-    "oberon": true,
-    "huntRoutes": 50,
-    "antiKick": true,
-    "talkDelay": 211,
-    "scythe": 9596,
+    "shovel": 9596,
     "lootDelay": 200,
+    "nextBackpack": true,
+    "autoOpenDoors": true,
+    "stake": false,
+    "scythe": 9596,
+    "title": true,
+    "oberon": true,
+    "antiKick": true,
+    "talkDelay": 1000,
+    "huntRoutes": 50,
+    "reachable": false,
     "reUse": false,
-    "height": 360,
+    "killUnder": 1,
     "timers": true
   },
-  "bestHeal": 406,
+  "caveBotTasker": {
+    "max": 0,
+    "monster": "",
+    "inProgress": false,
+    "count": 1,
+    "taskName": ""
+  },
   "specialDeposit": {
     "height": 380,
     "items": [
@@ -116,124 +121,94 @@
     ],
     "rarityFrames": true,
     "outfits": {
-      "Sandcrawler": {
+      "Guzzlemaw": {
         "addons": 0,
         "feet": 0,
         "mount": 0,
-        "body": 0,
-        "type": 350,
         "auxType": 0,
+        "type": 584,
+        "body": 0,
         "legs": 0,
         "head": 0
       },
-      "Raging Mage": {
-        "addons": 0,
-        "feet": 0,
-        "type": 416,
-        "body": 0,
-        "legs": 0,
-        "auxType": 0,
-        "mount": 0,
-        "head": 0
-      },
-      "Dragon": {
+      "Silencer": {
         "addons": 0,
         "feet": 0,
         "mount": 0,
-        "body": 0,
-        "type": 34,
         "auxType": 0,
+        "type": 585,
+        "body": 0,
         "legs": 0,
         "head": 0
       },
-      "Energized Raging Mage": {
+      "Retching Horror": {
         "addons": 0,
         "feet": 0,
-        "type": 416,
+        "mount": 0,
+        "auxType": 0,
+        "type": 588,
         "body": 0,
         "legs": 0,
-        "auxType": 0,
-        "mount": 0,
         "head": 0
       },
-      "Minotaur": {
+      "Choking Fear": {
+        "addons": 0,
+        "feet": 0,
+        "legs": 0,
+        "auxType": 0,
+        "mount": 0,
+        "body": 0,
+        "type": 586,
+        "head": 0
+      },
+      "Frazzlemaw": {
         "addons": 0,
         "feet": 0,
         "mount": 0,
+        "auxType": 0,
+        "type": 594,
         "body": 0,
-        "type": 25,
+        "legs": 0,
+        "head": 0
+      },
+      "Dog": {
+        "legs": 0,
+        "feet": 0,
+        "addons": 0,
+        "auxType": 0,
+        "mount": 0,
+        "body": 0,
+        "type": 32,
+        "head": 0
+      },
+      "Rat": {
+        "addons": 0,
+        "feet": 0,
+        "type": 21,
         "auxType": 0,
         "legs": 0,
+        "body": 0,
+        "mount": 0,
         "head": 0
       },
       "Yielothax": {
-        "addons": 0,
+        "legs": 0,
         "feet": 0,
-        "mount": 0,
+        "addons": 0,
         "auxType": 0,
+        "mount": 0,
+        "body": 0,
         "type": 408,
-        "body": 0,
-        "legs": 0,
         "head": 0
       },
-      "Dragon Hatchling": {
+      "Training Monk": {
         "addons": 0,
         "feet": 0,
-        "mount": 0,
-        "body": 0,
-        "type": 271,
-        "auxType": 0,
         "legs": 0,
-        "head": 0
-      },
-      "Lion": {
-        "addons": 0,
-        "feet": 0,
-        "mount": 0,
         "body": 0,
-        "type": 41,
-        "auxType": 0,
-        "legs": 0,
-        "head": 0
-      },
-      "Dragon Lord": {
-        "addons": 0,
-        "feet": 0,
         "mount": 0,
         "auxType": 0,
-        "type": 39,
-        "body": 0,
-        "legs": 0,
-        "head": 0
-      },
-      "Golden Servant": {
-        "addons": 0,
-        "feet": 0,
-        "type": 396,
-        "body": 0,
-        "legs": 0,
-        "auxType": 0,
-        "mount": 0,
-        "head": 0
-      },
-      "Dajjin Ijjilicklein": {
-        "addons": 0,
-        "feet": 18,
-        "type": 128,
-        "body": 0,
-        "legs": 18,
-        "auxType": 0,
-        "mount": 0,
-        "head": 40
-      },
-      "Minotaur Guard": {
-        "addons": 0,
-        "feet": 0,
-        "mount": 0,
-        "body": 0,
-        "type": 29,
-        "auxType": 0,
-        "legs": 0,
+        "type": 1078,
         "head": 0
       }
     }
@@ -248,79 +223,84 @@
       "id": 3081
     }
   ],
-  "bestHit": 682,
+  "bestHit": 2414,
   "EquipperPanel": {
     "enabled": false,
     "bosses": [
 
     ],
     "rules": [
-
+      {
+        "mainCondition": 1,
+        "optionalCondition": 2,
+        "relation": "-",
+        "visible": true,
+        "enabled": true,
+        "name": "garlic amulet",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          3083,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "mainCondition": 1,
+        "optionalCondition": 2,
+        "relation": "-",
+        "visible": true,
+        "enabled": true,
+        "name": "usual",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          27565,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
     ]
   },
-  "caveBotTasker": {
-    "max": 0,
-    "monster": "",
-    "inProgress": false,
-    "count": 0,
-    "taskName": ""
+  "_configs": {
+    "targetbot_configs": {
+      "selected": "atk_only",
+      "enabled": true
+    },
+    "cavebot_configs": {
+      "selected": "grazzle_roshamuul",
+      "enabled": false
+    }
   },
+  "checkVersion": 1685042250,
   "foodItems": [
     {
-      "count": 89,
-      "id": 3725
+      "id": 3725,
+      "count": 100
     },
     {
-      "count": 1,
-      "id": 3577
-    },
-    {
-      "count": 1,
-      "id": 3583
-    },
-    {
-      "id": 3607,
+      "id": 3577,
       "count": 1
     },
     {
-      "id": 3585,
+      "id": 3582,
       "count": 1
     },
     {
-      "id": 3592,
-      "count": 1
-    },
-    {
-      "id": 3600,
-      "count": 1
-    },
-    {
-      "id": 3601,
+      "id": 3578,
       "count": 1
     }
   ],
-  "_configs": {
-    "targetbot_configs": {
-      "selected": "config_name",
-      "enabled": false
-    },
-    "cavebot_configs": {
-      "selected": "sell_supplies",
-      "enabled": false
-    }
-  },
-  "checkVersion": 1685042168,
+  "bestHeal": 1406,
   "autoTradeMessage": "I'm using OTClientV8!",
-  "pushmax": {
-    "pushMaxRuneId": 3188,
-    "mwallBlockId": 2128,
-    "pushDelay": 1060,
-    "enabled": true,
-    "pushMaxKey": "PageUp"
-  },
-  "autofollow": {
-    "player": "Dajjin Ijjilicklein"
-  },
   "BOTserver": {
     "manaInfo": true,
     "mwallInfo": true,
@@ -332,11 +312,9 @@
     "vocation": true
   },
   "_macros": {
-    "": false,
-    "Follow": false,
-    "Hold Target": false,
-    "Exchange money": true,
-    "Eat Food": true
+    "": true,
+    "Eat Food": true,
+    "Exchange money": true
   },
   "moneyItems": [
     {
@@ -391,15 +369,15 @@
 
     ],
     "outfits": false,
-    "friendList": [
-
-    ],
+    "groupMembers": true,
+    "marks": false,
+    "highlight": false,
     "blackList": [
 
     ],
-    "highlight": false,
-    "marks": false,
-    "groupMembers": true
+    "friendList": [
+
+    ]
   },
   "newHealer": {
     "settings": [
@@ -444,19 +422,23 @@
         "text": "Min Player MP%: "
       }
     ],
+    "groups": [
+
+    ],
+    "customPlayers": [
+
+    ],
     "conditions": {
-      "sorcerers": false,
+      "party": true,
       "knights": true,
       "friends": false,
       "botserver": false,
       "paladins": true,
-      "party": true,
       "druids": false,
+      "sorcerers": false,
       "guild": false
     },
-    "customPlayers": [
-
-    ],
+    "enabled": false,
     "priorities": [
       {
         "custom": true,
@@ -489,10 +471,6 @@
         "mana": true
       }
     ],
-    "enabled": false,
-    "groups": [
-
-    ],
     "vocations": [
 
     ]
@@ -504,14 +482,8 @@
     "list": [
       {
         "items": [
-          {
-            "id": 3081,
-            "count": 1
-          },
-          {
-            "id": 3048,
-            "count": 1
-          }
+          3081,
+          3048
         ],
         "value": "Main Backpack",
         "item": 9601,
@@ -547,8 +519,24 @@
         "item": 23396,
         "min": true,
         "enabled": true
+      },
+      {
+        "items": [
+
+        ],
+        "value": "Ammo",
+        "item": 35562,
+        "min": true,
+        "enabled": true
       }
     ]
+  },
+  "pushmax": {
+    "pushMaxRuneId": 3188,
+    "mwallBlockId": 2128,
+    "pushDelay": 1060,
+    "enabled": true,
+    "pushMaxKey": "PageUp"
   },
   "autoEquip": [
     {
@@ -565,6 +553,5 @@
       "on": false,
       "slot": 0
     }
-  ],
-  "ingame_hotkeys": "followName = \"autofollow\"\nif not storage[followName] then storage[followName] = { player = 'name'} end\nlocal toFollowPos = {}\n\nUI.Separator()\nUI.Label(\"Auto Follow\")\n\nfollowTE = UI.TextEdit(storage[followName].player or \"name\", function(widget, newText)\n    storage[followName].player = newText\nend)\n\nlocal followChange = macro(50, \"Follow Change\", function() end)\n\nlocal followMacro = macro(20, \"Follow\", function()\n    local target = getCreatureByName(storage[followName].player)\n    if target then\n        local tpos = target:getPosition()\n        toFollowPos[tpos.z] = tpos\n    end\n    if player:isWalking() then\n        return\n    end\n    local p = toFollowPos[posz()]\n    if not p then\n        return\n    end\n    if autoWalk(p, 20, { ignoreNonPathable = true, precision = 1 }) then\n        delay(50)\n    end\nend)\nUI.Separator()\nonPlayerPositionChange(function(newPos, oldPos)\n  if followChange:isOff() then return end\n  if (g_game.isFollowing()) then\n    tfollow = g_game.getFollowingCreature()\n\n    if tfollow then\n      if tfollow:getName() ~= storage[followName].player then\n        followTE:setText(tfollow:getName())\n        storage[followName].player = tfollow:getName()\n      end\n    end\n  end\nend)\n\nonCreaturePositionChange(function(creature, newPos, oldPos)\n    if creature:getName() == storage[followName].player and newPos then\n        toFollowPos[newPos.z] = newPos\n    end\nend)"
+  ]
 }

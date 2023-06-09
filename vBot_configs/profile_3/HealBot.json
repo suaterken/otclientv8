@@ -1,0 +1,203 @@
+{
+  "ConditionPanel": {
+    "cureBurn": false,
+    "curseCost": 80,
+    "electrifyCost": 22,
+    "ignoreInPz": true,
+    "bleedCost": 45,
+    "cureCurse": false,
+    "holdHaste": true,
+    "curePosion": false,
+    "hasteSpell": "utani hur",
+    "cureParalyse": false,
+    "stopHaste": false,
+    "cureBleed": false,
+    "holdUtura": false,
+    "paralyseSpell": "utani hur",
+    "utanaCost": 440,
+    "uturaType": "Utura Gran",
+    "poisonCost": 20,
+    "utamoCost": 40,
+    "enabled": false,
+    "uturaCost": 165,
+    "cureElectrify": false,
+    "holdUtamo": false,
+    "paralyseCost": 40,
+    "hasteCost": 40,
+    "holdUtana": false,
+    "burnCost": 30
+  },
+  "currentHealBotProfile": 1,
+  "healbot": [
+    {
+      "MessageDelay": false,
+      "Conditions": true,
+      "itemTable": [
+        {
+          "sign": "<",
+          "origin": "HP%",
+          "value": 70,
+          "item": 23375,
+          "index": 3,
+          "enabled": false
+        },
+        {
+          "sign": "<",
+          "origin": "HP%",
+          "value": 83,
+          "item": 23375,
+          "index": 4,
+          "enabled": false
+        },
+        {
+          "sign": "<",
+          "value": 87,
+          "index": 7,
+          "item": 23375,
+          "origin": "HP%",
+          "enabled": true
+        },
+        {
+          "sign": "<",
+          "origin": "HP%",
+          "value": 90,
+          "item": 239,
+          "index": 5,
+          "enabled": true
+        },
+        {
+          "sign": "<",
+          "origin": "MP%",
+          "value": 80,
+          "item": 237,
+          "index": 6,
+          "enabled": true
+        },
+        {
+          "enabled": false,
+          "value": 60,
+          "index": 2,
+          "item": 237,
+          "origin": "MP%",
+          "sign": "<"
+        },
+        {
+          "enabled": false,
+          "value": 70,
+          "index": 1,
+          "item": 7643,
+          "origin": "HP%",
+          "sign": "<"
+        }
+      ],
+      "Delay": true,
+      "Visible": true,
+      "Cooldown": true,
+      "spellTable": [
+        {
+          "enabled": true,
+          "value": 70,
+          "origin": "HP%",
+          "sign": "<",
+          "spell": "exura gran ico",
+          "index": 1,
+          "cost": 200
+        },
+        {
+          "enabled": true,
+          "index": 3,
+          "origin": "HP%",
+          "spell": "exura ico",
+          "sign": "<",
+          "value": 95,
+          "cost": 40
+        },
+        {
+          "enabled": false,
+          "value": 90,
+          "origin": "HP%",
+          "sign": "<",
+          "spell": "exura ico",
+          "index": 2,
+          "cost": 40
+        },
+        {
+          "enabled": true,
+          "value": 98,
+          "origin": "MP%",
+          "sign": ">",
+          "spell": "exura ico",
+          "index": 4,
+          "cost": 40
+        }
+      ],
+      "enabled": true,
+      "name": "knight",
+      "Interval": true
+    },
+    {
+      "MessageDelay": false,
+      "Conditions": true,
+      "itemTable": [
+
+      ],
+      "Delay": true,
+      "Visible": true,
+      "Cooldown": true,
+      "spellTable": [
+
+      ],
+      "enabled": false,
+      "name": "Profile #2",
+      "Interval": true
+    },
+    {
+      "MessageDelay": false,
+      "Conditions": true,
+      "itemTable": [
+
+      ],
+      "Delay": true,
+      "Visible": true,
+      "Cooldown": true,
+      "spellTable": [
+
+      ],
+      "enabled": false,
+      "name": "Profile #3",
+      "Interval": true
+    },
+    {
+      "MessageDelay": false,
+      "Conditions": true,
+      "itemTable": [
+
+      ],
+      "Delay": true,
+      "Visible": true,
+      "Cooldown": true,
+      "spellTable": [
+
+      ],
+      "enabled": false,
+      "name": "Profile #4",
+      "Interval": true
+    },
+    {
+      "MessageDelay": false,
+      "Conditions": true,
+      "itemTable": [
+
+      ],
+      "Delay": true,
+      "Visible": true,
+      "Cooldown": true,
+      "spellTable": [
+
+      ],
+      "enabled": false,
+      "name": "Profile #5",
+      "Interval": true
+    }
+  ]
+}

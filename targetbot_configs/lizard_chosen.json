@@ -2,12 +2,8 @@
   "looting": {
     "items": [
       {
-        "count": 6,
+        "count": 1,
         "id": 3035
-      },
-      {
-        "count": 15,
-        "id": 3031
       }
     ],
     "maxDanger": 10,
@@ -33,19 +29,19 @@
       "regex": "^.*$",
       "chase": true,
       "priority": 1,
-      "keepDistance": false,
+      "keepDistance": true,
       "closeLure": false,
       "danger": 1,
-      "keepDistanceRange": 1,
-      "lure": false,
+      "keepDistanceRange": 2,
+      "lure": true,
       "dynamicLureDelay": false,
       "dynamicLure": false,
       "faceMonster": false,
-      "lureCavebot": false,
+      "lureCavebot": true,
       "dontLoot": false,
       "diamondArrows": false,
       "delayFrom": 2,
-      "anchor": false,
+      "anchor": true,
       "closeLureAmount": 3,
       "rePosition": false,
       "name": "*",

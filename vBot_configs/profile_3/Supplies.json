@@ -1,0 +1,21 @@
+{
+  "supplies": {
+    "knight_roshamuul": {
+      "items": {
+        "23375": {
+          "max": 500,
+          "min": 100,
+          "avg": 0
+        },
+        "237": {
+          "max": 1300,
+          "min": 200,
+          "avg": 0
+        }
+      },
+      "capValue": "70",
+      "capSwitch": true
+    },
+    "currentProfile": "knight_roshamuul"
+  }
+}

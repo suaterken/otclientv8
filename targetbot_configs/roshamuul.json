@@ -2,12 +2,8 @@
   "looting": {
     "items": [
       {
-        "count": 6,
+        "count": 18,
         "id": 3035
-      },
-      {
-        "count": 15,
-        "id": 3031
       }
     ],
     "maxDanger": 10,
@@ -25,7 +21,7 @@
       "lureDelay": 250,
       "lureMin": 1,
       "maxDistance": 10,
-      "anchorRange": 3,
+      "anchorRange": 2,
       "lureCount": 2,
       "avoidAttacks": false,
       "rePositionAmount": 5,
@@ -37,11 +33,11 @@
       "closeLure": false,
       "danger": 1,
       "keepDistanceRange": 1,
-      "lure": false,
+      "lure": true,
       "dynamicLureDelay": false,
       "dynamicLure": false,
       "faceMonster": false,
-      "lureCavebot": false,
+      "lureCavebot": true,
       "dontLoot": false,
       "diamondArrows": false,
       "delayFrom": 2,

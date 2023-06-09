@@ -34,6 +34,13 @@ if type(storage[panelName]) ~= "table" then
                 min = true,
                 items = {}
             },
+            {
+                value = "Ammo",
+                enabled = true,
+                item = 35562,
+                min = true,
+                items = {}
+            },
         }
     }
 end

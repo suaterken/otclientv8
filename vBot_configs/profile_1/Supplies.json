@@ -1,36 +1,59 @@
 {
   "supplies": {
-    "paladin": {
-      "SoftBoots": false,
+    "paladin low": {
       "items": {
-        "35902": {
-          "max": 900,
+        "16141": {
+          "max": 800,
           "min": 100,
-          "avg": 120
+          "avg": 100
         },
         "238": {
-          "max": 500,
-          "min": 60,
-          "avg": 64
+          "max": 400,
+          "min": 100,
+          "avg": 50
+        },
+        "23374": {
+          "max": 150,
+          "min": 100,
+          "avg": 0
+        }
+      },
+      "capValue": "0"
+    },
+    "paladin_lizardchosen": {
+      "items": {
+        "35901": {
+          "max": 2100,
+          "min": 150,
+          "avg": 200
+        },
+        "238": {
+          "max": 350,
+          "min": 50,
+          "avg": 111
+        },
+        "3161": {
+          "max": 900,
+          "min": 50,
+          "avg": 95
         },
         "23374": {
           "max": 200,
-          "min": 60,
+          "min": 50,
           "avg": 0
-        },
-        "237": [
-
-        ]
+        }
       },
-      "capValue": "50",
-      "capSwitch": false
+      "capValue": "60",
+      "staminaValue": "39",
+      "capSwitch": true
     },
-    "currentProfile": "pala low",
-    "pala low": {
+    "currentProfile": "grazzle_pala",
+    "paladin": {
+      "capValue": "50",
       "items": {
         "238": {
-          "max": 500,
-          "min": 50,
+          "max": 400,
+          "min": 49,
           "avg": 10
         },
         "23374": {
@@ -39,13 +62,34 @@
           "avg": 0
         },
         "35902": {
-          "max": 1500,
-          "min": 50,
+          "max": 1900,
+          "min": 120,
           "avg": 100
         }
       },
-      "capValue": "50",
       "capSwitch": false
+    },
+    "grazzle_pala": {
+      "items": {
+        "35901": {
+          "max": 1900,
+          "min": 150,
+          "avg": 0
+        },
+        "23374": {
+          "max": 800,
+          "min": 150,
+          "avg": 0
+        },
+        "3161": {
+          "max": 1400,
+          "min": 50,
+          "avg": 0
+        }
+      },
+      "capValue": "100",
+      "staminaValue": "0",
+      "capSwitch": true
     }
   }
 }

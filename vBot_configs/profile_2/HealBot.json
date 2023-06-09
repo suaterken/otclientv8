@@ -71,6 +71,15 @@
       "spellTable": [
         {
           "enabled": true,
+          "value": 60,
+          "origin": "HP%",
+          "sign": "<",
+          "spell": "exura vita",
+          "index": 3,
+          "cost": 210
+        },
+        {
+          "enabled": true,
           "index": 1,
           "origin": "HP%",
           "spell": "exura gran",
@@ -86,25 +95,42 @@
           "sign": "<",
           "value": 90,
           "cost": 20
+        },
+        {
+          "enabled": true,
+          "value": 99,
+          "origin": "MP%",
+          "sign": ">",
+          "spell": "exura gran",
+          "index": 4,
+          "cost": 70
         }
       ],
       "enabled": true,
-      "name": "Profile #3",
+      "name": "mage",
       "itemTable": [
         {
           "sign": "<",
-          "value": 50,
-          "index": 1,
-          "item": 268,
           "origin": "MP%",
-          "enabled": true
+          "value": 50,
+          "item": 268,
+          "index": 1,
+          "enabled": false
+        },
+        {
+          "enabled": false,
+          "index": 2,
+          "origin": "MP%",
+          "item": 237,
+          "value": 50,
+          "sign": "<"
         },
         {
           "enabled": true,
           "origin": "MP%",
           "value": 50,
-          "item": 237,
-          "index": 2,
+          "item": 23373,
+          "index": 3,
           "sign": "<"
         }
       ]
